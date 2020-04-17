@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build":"webpack",
-    "start": "node server/index.js",
+    "start": "npm run build && node server/index.js",
     "test": "mocha test/**/*.spec.js --exit",
     "submit": "mocha test/submission.spec.js"
   },
