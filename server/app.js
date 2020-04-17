@@ -14,7 +14,6 @@ db.once('open', function(){
 
 mongoose.Promise = Promise;
 
-// initialize app
 const app = express();
 
 app.use(bodyParser.json());
