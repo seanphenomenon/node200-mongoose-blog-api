@@ -2,8 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+require('dotenv').config()
 
-mongoose.connect("mongodb://localhost/my-blog", {
+const MATLAS_URI = process.env.MATLAS_URI;
+
+mongoose.connect(MATLAS_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
