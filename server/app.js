@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const MATLAS_URI = process.env.MATLAS_URI;
 
-mongoose.connect(MATLAS_URI, {
+mongoose.connect('mongodb://localhost/my-blog', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
