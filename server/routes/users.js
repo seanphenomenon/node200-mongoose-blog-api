@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
+const Blog = require('../models/Blog');
+
 
 // using Postman to test all routes
 
