@@ -4,9 +4,9 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 require('dotenv').config()
 
-const MATLAS_URI = process.env.MATLAS_URI;
+const MATLAS = process.env.MATLAS;
 
-mongoose.connect('mongodb://localhost/my-blog', {
+mongoose.connect(MATLAS, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
